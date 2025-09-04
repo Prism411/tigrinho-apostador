@@ -2,6 +2,9 @@
 
 > **Aplicativo Android educativo com tom sarcástico sobre jogos de apostas, desenvolvido para projeto acadêmico.**
 
+
+Link para ver vídeo tutorial: https://youtu.be/XDR2K1_jUzw
+
 <div align="center">
 
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
