@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    
+    <!-- Tiger face circle -->
+    <path
+        android:fillColor="#FFA500"
+        android:pathData="M100,20 A80,80 0 1,1 100,180 A80,80 0 1,1 100,20" />
+    
+    <!-- Tiger stripes -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M60,40 L70,45 L65,55 Z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M130,40 L140,45 L135,55 Z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M50,70 L60,75 L55,85 Z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M140,70 L150,75 L145,85 Z" />
+    
+    <!-- Left eye white -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#000000"
+        android:strokeWidth="2"
+        android:pathData="M75,80 m-12,0 a12,12 0 1,1 24,0 a12,12 0 1,1 -24,0" />
+    
+    <!-- Right eye white -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#000000"
+        android:strokeWidth="2"
+        android:pathData="M125,80 m-12,0 a12,12 0 1,1 24,0 a12,12 0 1,1 -24,0" />
+    
+    <!-- Left eye pupil -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M75,80 m-6,0 a6,6 0 1,1 12,0 a6,6 0 1,1 -12,0" />
+    
+    <!-- Right eye pupil -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M125,80 m-6,0 a6,6 0 1,1 12,0 a6,6 0 1,1 -12,0" />
+    
+    <!-- Nose -->
+    <path
+        android:fillColor="#FF69B4"
+        android:pathData="M100,100 L90,110 L100,115 L110,110 Z" />
+    
+    <!-- Mouth left -->
+    <path
+        android:strokeColor="#000000"
+        android:strokeWidth="3"
+        android:fillColor="#00000000"
+        android:pathData="M100,115 Q85,125 70,120" />
+    
+    <!-- Mouth right -->
+    <path
+        android:strokeColor="#000000"
+        android:strokeWidth="3"
+        android:fillColor="#00000000"
+        android:pathData="M100,115 Q115,125 130,120" />
+    
+    <!-- Dollar sign left eye -->
+    <path
+        android:strokeColor="#00FF00"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"
+        android:pathData="M72,77 L72,83 M78,77 L78,83 M72,78 L78,78 M72,82 L78,82" />
+    
+    <!-- Dollar sign right eye -->
+    <path
+        android:strokeColor="#00FF00"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"
+        android:pathData="M122,77 L122,83 M128,77 L128,83 M122,78 L128,78 M122,82 L128,82" />
+</vector>

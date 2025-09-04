@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(/C:\\Users\\T-GAMER\\AndroidStudioProjects\\TigrinhoApostador\\app\\src\\main\\res\\values/**)",
+      "Read(/C:\\Users\\T-GAMER\\AndroidStudioProjects\\TigrinhoApostador\\app/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

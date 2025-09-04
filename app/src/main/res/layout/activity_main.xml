@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- COMPONENTE 10 - ScrollView: Container com scroll para múltiplos componentes -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gold_background"
+    tools:context=".MainActivity">
+
+    <!-- COMPONENTE 11 - LinearLayout: Layout de organização vertical -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- COMPONENTE 1 - ImageView: Exibe a imagem/ícone do tigrinho -->
+        <ImageView
+            android:id="@+id/tigerImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/tiger_icon"
+            android:contentDescription="Tigrinho milionário" />
+
+        <!-- COMPONENTE 2 - TextView: Exibe o título principal -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🐯 TIGRINHO APOSTADOR 🐯"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginTop="8dp" />
+
+        <!-- COMPONENTE 2 - TextView: Exibe o subtítulo sarcástico -->
+        <TextView
+            android:id="@+id/subtitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="O app que te deixa pobre com estilo!"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:textColor="@color/dark_gold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- COMPONENTE 2 - TextView: Label do saldo -->
+        <TextView
+            android:id="@+id/balanceLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seu saldo (que vai sumir):"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp" />
+
+        <!-- COMPONENTE 2 - TextView: Valor do saldo atual -->
+        <TextView
+            android:id="@+id/balanceText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="R$ 100,00"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- COMPONENTE 2 - TextView: Label do campo de aposta -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quanto você quer perder hoje?"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+
+        <!-- COMPONENTE 3 - EditText: Campo de entrada para valor da aposta -->
+        <EditText
+            android:id="@+id/betAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o valor da aposta"
+            android:inputType="numberDecimal"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- COMPONENTE 2 - TextView: Label do multiplicador -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Escolha seu nível de ilusão:"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp" />
+
+        <!-- COMPONENTE 4 - RadioGroup: Grupo de opções para multiplicador -->
+        <RadioGroup
+            android:id="@+id/multiplierGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <!-- COMPONENTE 4 - RadioButton: Opção 2x -->
+            <RadioButton
+                android:id="@+id/radio2x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2x - Iniciante na perda"
+                android:textColor="@color/black"
+                android:checked="true" />
+
+            <!-- COMPONENTE 4 - RadioButton: Opção 5x -->
+            <RadioButton
+                android:id="@+id/radio5x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5x - Profissional em falência"
+                android:textColor="@color/black" />
+
+            <!-- COMPONENTE 4 - RadioButton: Opção 10x -->
+            <RadioButton
+                android:id="@+id/radio10x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10x - Viciado sem salvação"
+                android:textColor="@color/black" />
+        </RadioGroup>
+
+        <!-- COMPONENTE 5 - CheckBox: Aceitar termos sarcásticos -->
+        <CheckBox
+            android:id="@+id/termsCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aceito perder todo meu dinheiro conscientemente"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp" />
+
+        <!-- COMPONENTE 2 - TextView: Label do spinner -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Escolha seu tigre da sorte (azar):"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+
+        <!-- COMPONENTE 6 - Spinner: Menu dropdown para escolher tigre -->
+        <Spinner
+            android:id="@+id/tigerSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/spinner_background"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- COMPONENTE 7 - Button: Botão principal de aposta -->
+        <Button
+            android:id="@+id/betButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="GIRAR E CHORAR"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/red"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- COMPONENTE 8 - ProgressBar: Barra de progresso horizontal -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="100"
+            android:progress="0"
+            android:visibility="gone"
+            android:layout_marginBottom="8dp" />
+
+        <!-- COMPONENTE 2 - TextView: Texto do resultado da aposta -->
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- COMPONENTE 2 - TextView: Mensagens sarcásticas -->
+        <TextView
+            android:id="@+id/motivationalText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:textColor="@color/dark_gold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- COMPONENTE 2 - TextView: Estatísticas de perdas -->
+        <TextView
+            android:id="@+id/statsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Perdas acumuladas: R$ 0,00"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="@color/dark_gold"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
